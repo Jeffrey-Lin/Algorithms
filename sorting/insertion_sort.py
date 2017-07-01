@@ -3,7 +3,7 @@
 from sys import argv
 
 # Get user input as a command line argument
-numbers = argv[1:]
+numbers = list(map(int, argv[1:]))
 
 for i, num in enumerate(numbers[1:], 1):
     j = i - 1
